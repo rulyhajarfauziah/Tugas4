@@ -1,34 +1,51 @@
-def input_matrix(order):
-    matrix = []
-    for i in range(order):
-        row = list(map(int, input(f"Masukkan elemen baris {i + 1} (pisahkan dengan spasi): ").split()))
-        matrix.append(row)
-    return matrix
+baris_A=int(input("Masukkan ukuran baris matriks A= ")) kolom_A=int(input("Masukkan ukuran kolom matriks A= "))
 
-def multiply_matrices(A, B):
-    order = len(A)
-    # Inisialisasi matriks hasil
-    C = [[0 for _ in range(order)] for _ in range(order)]
-    
-    for i in range(order):
-        for j in range(order):
-            for k in range(order):
-                C[i][j] += A[i][k] * B[k][j]
-    return C
+baris_B-int(input("Masukkan ukuran baris matriks B- "))
 
-def print_matrix(matrix):
-    for row in matrix:
-        print(" ".join(map(str, row)))
+kolom_B=int(input("Masukkan ukuran kolom matriks B- "))
 
-order = 3
-print("Masukkan matriks A:")
-A = input_matrix(order)
-print("Masukkan matriks B:")
-B = input_matrix(order)
+if (kolom_A!-baris_B):
 
-if len(A[0]) != len(B):
-    print("Matriks tidak dapat dikalikan.")
+print ("Matriks Tidak Dapat Dikalikan!")
+
 else:
-    C = multiply_matrices(A, B)
-    print("Hasil Perkalian Matriks:")
-    print_matrix(C)
+
+print ("Masukkan element matriks A : ") A=[]
+
+for i in range (baris_A):
+
+baris=[]
+
+for j in range (kolom_A):
+
+value-int(input("Masukkan element: "))
+
+baris.append(value)
+
+A.append(baris)
+
+print("Masukkan element matriks B") B=[]
+
+for i in range (baris_B):
+
+baris=[]
+
+for j in range (kolom_B):
+
+value-int(input("Masukkan element: "))
+
+baris.append(value)
+
+B.append(baris)
+
+print ("Matriks A: ", A)
+
+print ("Matriks B: ", B)
+
+hasil_kali [[0 for in range(kolom_B)] for in range(baris_A)]
+
+for i in range(baris_A):
+
+for j in range(kolom_B): for k in range(kolom_A):
+
+hasil kali[i][1]+=A[i][k]*B[k][11
